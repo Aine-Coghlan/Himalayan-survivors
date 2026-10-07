@@ -1,0 +1,63 @@
+﻿Table,Field,Description
+members,,
+members,expid,Expedition ID (foreign key)
+members,membid,Expedition member ID
+members,peakid,Peak ID
+members,myear,Year
+members,mseason,Season
+members,fname,First (given) name
+members,lname,Last (family) name
+members,sex,Sex
+members,yob,The year of birth for this member
+members,citizen,Citizenship
+members,status,Status
+members,residence,Residence (city / country)
+members,occupation,Ocucpation
+members,leader,Leader (Y/N)
+members,deputy,Deputy leader (Y/N)
+members,bconly,The member did not climb above base camp (or advanced base camp in cases where the path from base camp does not require technical climbing skills) (Y/N)
+members,nottobc,The member did not reach base camp (Y/N)
+members,support,The member went above base camp only in a support role (often used for photographers and advisors for women’s expeditions) (Y/N)
+members,disabled,The member is physically disabled (Y/N)
+members,hired,"The person was hired by the expedition. For expeditions in Nepal, hired personnel are not listed on the permit; for expeditions in China, hired personnel are listed on the permit. (Y/N)"
+members,sherpa,Sherpa (Y/N)
+members,tibetan,Tibetan (Y/N)
+members,msuccess,Success (Y/N)
+members,mclaimed,The member’s claim of success has been disproved or is not generally recognized by the mountaineering community. Claimed successes are not counted as successes in the statistical reports and analyses.
+members,mdisputed,"The member’s claim of success is either unverified or has been disputed by another party, but the evidence is insufficient to not recognize the ascent. In some cases, the ascent has been marked as disputed because the summit party disappeared and thus the ascent cannot be verified. Disputed successes are counted as successes in the statistical reports and analyses."
+members,msolo,Solo (Y/N)
+members,mtraverse,Traverse (Y/N)
+members,mski,"The member used skis or a snowboard during part of the descent of the peak (can be anywhere, not just from the summit)"
+members,mparapente,"The member used a parapente or hang glider during part of the descent of the peak (can be anywhere, not just from the summit)"
+members,mspeed,Speed ascent (Y/N)
+members,mhighpt,Expedition high-point reached (Y/N)
+members,mperhighpt,Personal high-point (meters)
+members,msmtdate1,The date that the member summited the peak the first time or reached a personal high point
+members,msmtdate2,The date that the member summited the peak the second time on this same expedition. A second or third ascent is counted only if the climber descended all the way to base camp or advanced base before re-ascending to the summit.
+members,msmtdate3,The date that the member summited the peak the third time on this same expedition.
+members,msmttime1,The time of day that the member summited the peak. The time is given in or converted to Nepal Standard Time (NST)
+members,msmttime2,2nd summit time
+members,msmttime3,3rd summit time
+members,mroute1,1st ascent route
+members,mroute2,2nd ascent route
+members,mroute3,3rd ascent route
+members,mascent1,"The team ascent number for this summit. These numbers are not maintained for recent ascents of Ama Dablam, Cho Oyu, and Everest as they have lost their significance since many teams are now summiting together."
+members,mascent2,2nd ascent route
+members,mascent3,3rd ascent route
+members,mo2used,Oxygen was used by this member (Y/N)
+members,mo2none,Oxygen was not used by this member (Y/N)
+members,mo2climb,Oxygen was used for climbing by this member (Y/N)
+members,mo2descent,"Oxygen was not used for climbing, but used only in descent on part of the route by this member (Y/N)"
+members,mo2sleep,Oxygen was used for sleeping by this member (Y/N)
+members,mo2medical,Oxygen was used for medical purposes by this member (Y/N)
+members,mo2note,Oxygen use reason
+members,death,Death (Y/N)
+members,deathdate,Date of death
+members,deathtime,Time of death
+members,deathtype,The primary cause of death
+members,deathhgtm,"The altitude at which the death or the accident leading to the death occurred (meters). For example, if the member died at base camp from injuries resulting from a fall at 7000 meters, the death height would be recorded as 7000."
+members,deathclass,The classification of death
+members,msmtbid,Summit bid
+members,msmtterm,Summit bid termination reason
+members,hcn,Himalayn Club number
+members,mchksum,Internal consistency check
