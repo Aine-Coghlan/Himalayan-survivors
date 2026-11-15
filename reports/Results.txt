@@ -1,8 +1,18 @@
+DRAFT CONCLUSION
+The current best model is the random forest one. It has significantly higher scores than the dummy, logistic regression
+and gradient boosting models. The confusion matrix shows that its very accurate when predicting if someone 
+survived, however, it still struggles with correctly identifying deaths due to the data imbalance. Despite attempts to 
+rectify that by having the class weight be balanced, its still learnt that guessing survival is the safest option. I 
+think to improve on this would be to lower the decision threshold to get the model to predict more climbers as having died
+during the expedition. 
+
+
+RESULTS TABLE
 -----------------------------------------------------------------------------------------------------
 |            |   DUMMY MODEL     | LOGISTIC REGRESSION | RANDOM FOREST      |    GRADIENT BOOSTING   |
 |------------|-------------------|---------------------|---------------------------------------------|
 |Accuracy    |0.9869662921348314 |0.9872471910112359   |0.987808988764045   |  0.9865168539325843    |
-|F1 Score    |0.4967201990499887 |0.5258357107459363   |0.987808988764045   |  0.5521590087115137    |
+|F1 Score    |0.4967201990499887 |0.5258357107459363   |0.631606741484089   |  0.5521590087115137    |
 |ROC-AUC     |      0.5          |0.7896761254789273   |0.8532507674612148  |  0.6940716320033289    |
 -----------------------------------------------------------------------------------------------------
 
@@ -10,4 +20,11 @@
 ERROR ANALYSIS
 In terms of the random forest model, it performs poorly in terms of correctly predicting that
 someone died. There's still a bias within the model towards prediciting someone survived. This is
-because there's an imbalance within the dataset. 98% of people survived
+because there's an imbalance within the dataset. 98% of people survived so the model is more prone
+to guessing a climber lived.
+The confusion matrix shows this as the model has close to 100% success rate for true negatives (correctly 
+guessed survival). But true positives (correctly guessed death) is 17%. If this was a model to be used in the
+real world this wouldn't be ideal as, in this scenario, it'd be better to guess someone died and be incorrect than 
+predict they survived and be incorrect. 
+
+

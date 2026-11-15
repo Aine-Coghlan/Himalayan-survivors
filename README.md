@@ -31,4 +31,4 @@ In the dummy model, the model basically just chose the most frequent outcome for
 In the logistic regression model, the accuracy is a little bit higher, as is the F-Score. The ROC-AUC is 28% higher which is good as it confirms this model is taking the different features into account. These accuracy results should increase with the more advanced models.
 
 ASSISTANCE DECLARATION
-I used stack overflow and code included in the lecture slides to help me, particularly when creating the pipelines and models.
+I used stack overflow and code included in the lecture slides to help me, particularly when creating the pipelines and models. I also looked at medium.com when trying to create and interpret the ROC-Curve correctly.
