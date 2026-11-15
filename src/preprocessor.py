@@ -4,6 +4,9 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 
+#Created numeric and categorical pipeline.
+# Filled missing with median/'missing'. 
+# Scaled/One Hot Encoded
 def get_preprocessor():
 
     numeric_features = ['age', 'myear']
@@ -20,10 +23,11 @@ def get_preprocessor():
 
     categorical_transformer = Pipeline(steps=[
         ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
-        ('onehot', OneHotEncoder(handle_unknown='ignore'))
+        ('onehot', OneHotEncoder(handle_unknown='ignore')) 
     ])
 
     return ColumnTransformer( transformers=[
         ('num', numeric_transformer, numeric_features),
         ('cat', categorical_transformer, categorical_features)
     ])
+
